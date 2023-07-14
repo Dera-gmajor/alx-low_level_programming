@@ -2,7 +2,7 @@
 #include <unistd>
 
 /**
- * main - Main function
+ * main - Entry point
  *
  * Return: Always 1
  *
