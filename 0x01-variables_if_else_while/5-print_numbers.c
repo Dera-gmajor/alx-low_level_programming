@@ -9,7 +9,7 @@ int main(void)
 {
 	int y;
 
-	for (y = 0; y <= 10; y++)
+	for (y = 0; y < 10; y++)
 		printf("numbers of base 10 %d\n", y);
 	return (0);
 }
