@@ -5,15 +5,23 @@
  */
 int main(void)
 {
-	int x;
+	int m;
+	int n;
 
-	for (x = '0'; x < '9'; x++)
+	for (m = '0'; m < '9'; m++)
 	{
-		putchar(x);
-		if (x != '9')
+		for (n = '1'; n < '9'; n++)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(m);
+			putchar(n);
+		{
+			if (m != 8 || n != 9)
+			{
+
+				putchar(44);
+				putchar(32);
+			}
+		}
 		}
 	}
 	putchar('\n');
