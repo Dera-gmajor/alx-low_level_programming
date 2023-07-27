@@ -7,7 +7,7 @@
 char *string_toupper(char *g)
 {
 	int f;
-	
+
 	for (f = 0; g[f] != '\0'; f++)
 	{
 		if (g[f] >= 'a' && g[f] <= 'z')
