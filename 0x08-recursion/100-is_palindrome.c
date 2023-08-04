@@ -8,7 +8,7 @@ int _string_length(char *s)
 {
 	if (*s == '\0')
 	{
-		return (1);
+		return (0);
 	}
 	else
 	{
@@ -47,7 +47,7 @@ int _palindrome_check(char *s, int length, int g)
 int is_palindrome(char *s)
 {
 	int g = 0;
-	int lenght = _string_length(s);
+	int length = _string_length(s);
 
 	return (_palindrome_check(s, length, g));
 }
