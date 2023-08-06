@@ -16,5 +16,9 @@ int y;
 			return (s + y);
 		}
 	}
-	return (0);
+	if (c == '\0')
+	{
+		return (s + y);
+	}
+	return (NULL);
 }
