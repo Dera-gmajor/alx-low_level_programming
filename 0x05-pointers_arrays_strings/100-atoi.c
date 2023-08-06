@@ -24,7 +24,6 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	while (*s != '\0')
+	while (*s != '\0');
 	return (num2 * sign);
 }
-
