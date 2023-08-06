@@ -23,7 +23,6 @@ int _atoi(char *s)
 			break;
 		}
 		s++;
-	}
-	while (*s != '\0')
-	return (num2 * num1);
+	} while (*s != '\0');
+		return (num2 * num1);
 }
