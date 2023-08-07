@@ -7,6 +7,6 @@
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	printf("%s\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
