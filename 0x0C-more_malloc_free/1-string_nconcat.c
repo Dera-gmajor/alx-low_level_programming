@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	n = 0;
 	while (s2[n] != '\0')
 		n++;
-	p = n;
+
 	if (n > p)
 		n = p;
 	q = m + n;
