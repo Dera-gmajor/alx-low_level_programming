@@ -5,7 +5,7 @@
  * @str: string to store new node
  * Return: address of the head.
  */
-list_t *add_node_end(list_t **b, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n;
 	list_t *a = *b;
