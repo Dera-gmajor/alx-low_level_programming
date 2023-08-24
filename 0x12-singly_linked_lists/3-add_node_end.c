@@ -8,7 +8,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n;
-	list_t *a = *b;
+	list_t *a = *head;
 	unsigned int c = 0;
 
 	for (c = 0; str[c]; c++)
@@ -20,9 +20,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	n->len = c;
 	n->next = NULL;
 
-	if (*b == NULL)
+	if (*head == NULL)
 	{
-		*b = n;
+		*head = n;
 		return (n);
 	}
 	while (a->next)
