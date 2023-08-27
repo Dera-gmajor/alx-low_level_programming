@@ -1,0 +1,40 @@
+#include "3-calc.h"
+/**
+ * main - main function
+ * @argc: arguement count
+ * @argv: array of argument
+ * Return: Always 0
+ */
+int main(int argc, char *argv[])
+{
+	if (argc != 4)
+	{
+		printf("Error\n");
+		return (98);
+	}
+	int a = atoi(argv[1]);
+	int b = atoi(argv[3]);
+	char op = argv[2][0];
+
+	if ((op != '+' &&
+			op != '-' &&
+			op != '/' &&
+			op != '*' &&
+			op != '%')
+			|| argv[2][1] != '\0')
+	{
+		printf("Error\n");
+		return (99);
+	}
+	if ((op == '/' || op == '%') && b == 0)
+	{
+		printf("Error\n");
+		return (100);
+	}
+	int (*calculate)(int, int);
+
+	calculate = get_op_func(argv[2]);
+
+	printf("%d\n", calculate(a, b));
+	return (0);
+}
