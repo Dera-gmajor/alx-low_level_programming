@@ -16,9 +16,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
-	char op = argv[2][0];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	if ((op != '+' &&
 			op != '-' &&
