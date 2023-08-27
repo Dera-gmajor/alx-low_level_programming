@@ -7,6 +7,10 @@
  */
 int main(int argc, char *argv[])
 {
+	int a, b;
+	char op = argv[2][0];
+	int (*calculate)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -31,7 +35,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (100);
 	}
-	int (*calculate)(int, int);
 
 	calculate = get_op_func(argv[2]);
 
