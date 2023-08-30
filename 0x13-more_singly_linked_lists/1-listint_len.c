@@ -11,7 +11,7 @@ size_t listint_len(const listint_t *h)
 
 	for (b = h, a = 0; b != NULL; b = b->next, a++)
 	{
-		// Empty loop body
+		/* Empty loop body */
 	}
 	return (a);
 }
