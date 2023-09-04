@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * read_textfile - reads a text file and prints it to the 
+ * read_textfile - reads a text file and prints it to the
  * POSIX standard output.
  * @filename: filename
  * @letters: letter
@@ -34,14 +34,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	w = write(STDOUT_FILENO, buffer, r);
-	 if (w == -1 || (size_t)w != (size_t)r)
-	 {
-		 close(a);
-		 free(buffer);
-		 return (0);
-	 }
-	 close(a);
-	 free(buffer);
+	if (w == -1 || (size_t)w != (size_t)r)
+	{
+		close(a);
+		free(buffer);
+		return (0);
+	}
+	close(a);
+	free(buffer);
 
-	 return (w);
+	return (w);
 }
