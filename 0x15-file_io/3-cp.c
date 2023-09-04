@@ -1,4 +1,5 @@
 #include "main.h"
+void status_check(int a, int b, char *argv[]);
 /**
  * main - main
  * @argc: arguement numbers
